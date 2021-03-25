@@ -1,0 +1,305 @@
+{
+  "id": "1669e7b8-9c24-4a7c-bd0f-a2d7864b58dd",
+  "version": "2.0",
+  "name": "cnsa21-clase",
+  "url": "https://ration.io",
+  "tests": [{
+    "id": "b2e5d6cc-69bb-407d-b884-866e1bcbe249",
+    "name": "sign-up-username-exists",
+    "commands": [{
+      "id": "bd824f4e-5f1a-4fb0-a530-603fcec85478",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "61c9c61b-6bc9-4552-a900-f4dc8bdd4e78",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "655x632",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3a4f213b-e37d-4eda-a931-07d5e384319d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign up",
+      "targets": [
+        ["linkText=Sign up", "linkText"],
+        ["css=.d-block", "css:finder"],
+        ["xpath=(//a[contains(text(),'Sign up')])[2]", "xpath:link"],
+        ["xpath=//header[@id='page-header']/div/a[3]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/signup')])[2]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a7dd8f37-eae5-4e17-a716-b4c666a026e0",
+      "comment": "",
+      "command": "type",
+      "target": "id=full-name",
+      "targets": [
+        ["id=full-name", "id"],
+        ["css=#full-name", "css:finder"],
+        ["xpath=//input[@id='full-name']", "xpath:attributes"],
+        ["xpath=//div[@id='signup']/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Pepe"
+    }, {
+      "id": "7bce4c71-c559-4538-8598-f91e35601a2d",
+      "comment": "",
+      "command": "type",
+      "target": "id=email-address",
+      "targets": [
+        ["id=email-address", "id"],
+        ["css=#email-address", "css:finder"],
+        ["xpath=//input[@id='email-address']", "xpath:attributes"],
+        ["xpath=//div[@id='signup']/div/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "pepe41234223@pepe.com"
+    }, {
+      "id": "a197127d-c5a1-4ef7-8572-43a946251b8d",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='signup']/div/div/form/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "pepe"
+    }, {
+      "id": "25c78859-0d9e-42b5-93c8-c3eefa401742",
+      "comment": "",
+      "command": "type",
+      "target": "id=confirm-password",
+      "targets": [
+        ["id=confirm-password", "id"],
+        ["css=#confirm-password", "css:finder"],
+        ["xpath=//input[@id='confirm-password']", "xpath:attributes"],
+        ["xpath=//div[@id='signup']/div/div/form/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "pepe"
+    }, {
+      "id": "99935df6-e78d-4cdf-94cd-72785ea2289d",
+      "comment": "",
+      "command": "click",
+      "target": "id=terms-agreement",
+      "targets": [
+        ["id=terms-agreement", "id"],
+        ["css=#terms-agreement", "css:finder"],
+        ["xpath=//input[@id='terms-agreement']", "xpath:attributes"],
+        ["xpath=//div[@id='signup']/div/div/form/div[5]/label/input", "xpath:idRelative"],
+        ["xpath=//label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "258d12da-6b26-40fd-ab69-8a0fec1a4c24",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ajax-button",
+      "targets": [
+        ["css=.ajax-button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='signup']/div/div/form/div[6]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Create account')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "61ed022b-86cb-4961-adbc-64f6e9de2f98",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.text-danger > small",
+      "targets": [
+        ["css=.text-danger > small", "css:finder"],
+        ["xpath=//div[@id='signup']/div/div/form/p/small", "xpath:idRelative"],
+        ["xpath=//small", "xpath:position"]
+      ],
+      "value": "It looks like there's already an account with your email address. If you forgot your password, you can recover it here."
+    }, {
+      "id": "f24b6466-d1f3-431e-97dc-e34402eba0fa",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.text-secondary",
+      "targets": [
+        ["css=.text-secondary", "css:finder"],
+        ["xpath=//div[@id='homepage']/div/div/h1/span", "xpath:idRelative"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'Share your stuff.')]", "xpath:innerText"]
+      ],
+      "value": "Share your stuff."
+    }]
+  }, {
+    "id": "78c3166d-570a-4a6b-bd8b-053289e4846d",
+    "name": "email-incorrecto",
+    "commands": [{
+      "id": "5c1b1f6f-db3e-4672-b1d8-5f018202b450",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:1337/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6aeb10b1-3ce9-46a4-9973-5d522953ab52",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "871x764",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e54a77b9-8ab3-43a6-82ee-8c6f7d4e5459",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign up",
+      "targets": [
+        ["linkText=Sign up", "linkText"],
+        ["css=.btn:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign up')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/signup')]", "xpath:href"],
+        ["xpath=//div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign up')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c88e3d47-3af3-43c2-9cc5-a25a84f1701d",
+      "comment": "",
+      "command": "type",
+      "target": "id=full-name",
+      "targets": [
+        ["id=full-name", "id"],
+        ["css=#full-name", "css:finder"],
+        ["xpath=//input[@id='full-name']", "xpath:attributes"],
+        ["xpath=//div[@id='signup']/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "asdf"
+    }, {
+      "id": "f9c15a2f-80e9-4dba-b501-e24409b50374",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ajax-form",
+      "targets": [
+        ["css=.ajax-form", "css:finder"],
+        ["xpath=//div[@id='signup']/div/div/form", "xpath:idRelative"],
+        ["xpath=//form", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "23f186e1-3a18-4564-ac8a-b2837c52bdbf",
+      "comment": "",
+      "command": "click",
+      "target": "id=email-address",
+      "targets": [
+        ["id=email-address", "id"],
+        ["css=#email-address", "css:finder"],
+        ["xpath=//input[@id='email-address']", "xpath:attributes"],
+        ["xpath=//div[@id='signup']/div/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bcc067fe-5443-491a-bf1c-cabed1619c06",
+      "comment": "",
+      "command": "type",
+      "target": "id=email-address",
+      "targets": [
+        ["id=email-address", "id"],
+        ["css=#email-address", "css:finder"],
+        ["xpath=//input[@id='email-address']", "xpath:attributes"],
+        ["xpath=//div[@id='signup']/div/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "asdf"
+    }, {
+      "id": "29a3b99d-4947-46a6-bd10-d4d01658d408",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='signup']/div/div/form/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "asd"
+    }, {
+      "id": "505a5833-f4c4-4335-9688-9e08f5a6d1cc",
+      "comment": "",
+      "command": "type",
+      "target": "id=confirm-password",
+      "targets": [
+        ["id=confirm-password", "id"],
+        ["css=#confirm-password", "css:finder"],
+        ["xpath=//input[@id='confirm-password']", "xpath:attributes"],
+        ["xpath=//div[@id='signup']/div/div/form/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "asd"
+    }, {
+      "id": "9c3c463a-7663-403e-864e-a5bb05e3a1fe",
+      "comment": "",
+      "command": "click",
+      "target": "id=terms-agreement",
+      "targets": [
+        ["id=terms-agreement", "id"],
+        ["css=#terms-agreement", "css:finder"],
+        ["xpath=//input[@id='terms-agreement']", "xpath:attributes"],
+        ["xpath=//div[@id='signup']/div/div/form/div[5]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0f433169-884e-435d-b9e0-a193c014679f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ajax-button",
+      "targets": [
+        ["css=.ajax-button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='signup']/div/div/form/div[6]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Create account')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d4a234af-4a63-4ae1-890a-1a5fdccf0c7c",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return document.getElementById(\"email-address\").validationMessage",
+      "targets": [],
+      "value": "message"
+    }, {
+      "id": "4a28f922-cdee-460f-ad2a-d188f254f721",
+      "comment": "",
+      "command": "echo",
+      "target": "${message}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b3f608bc-cf66-4062-b0a1-4ca04366f26f",
+      "comment": "",
+      "command": "assert",
+      "target": "message",
+      "targets": [],
+      "value": "Introduzca una dirección de correo."
+    }]
+  }],
+  "suites": [{
+    "id": "6a018294-8959-480b-96e2-462a516c6bb2",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["b2e5d6cc-69bb-407d-b884-866e1bcbe249"]
+  }],
+  "urls": ["https://ration.io/"],
+  "plugins": []
+}
