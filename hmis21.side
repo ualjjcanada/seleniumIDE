@@ -2,7 +2,7 @@
   "id": "753eaf1a-75e7-4286-b9dc-e5025b9554c9",
   "version": "2.0",
   "name": "hmis21",
-  "url": "https://www.ual.es",
+  "url": "https://ration.io",
   "tests": [{
     "id": "356ae925-2262-4320-b5a1-057477da075a",
     "name": "hmis-ual",
@@ -473,6 +473,161 @@
       ],
       "value": "Ha introducido un usuario y password incorrecto"
     }]
+  }, {
+    "id": "78c3166d-570a-4a6b-bd8b-053289e4846d",
+    "name": "email-incorrecto",
+    "commands": [{
+      "id": "5c1b1f6f-db3e-4672-b1d8-5f018202b450",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6aeb10b1-3ce9-46a4-9973-5d522953ab52",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "871x764",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e54a77b9-8ab3-43a6-82ee-8c6f7d4e5459",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign up",
+      "targets": [
+        ["linkText=Sign up", "linkText"],
+        ["css=.btn:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign up')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/signup')]", "xpath:href"],
+        ["xpath=//div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign up')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c88e3d47-3af3-43c2-9cc5-a25a84f1701d",
+      "comment": "",
+      "command": "type",
+      "target": "id=full-name",
+      "targets": [
+        ["id=full-name", "id"],
+        ["css=#full-name", "css:finder"],
+        ["xpath=//input[@id='full-name']", "xpath:attributes"],
+        ["xpath=//div[@id='signup']/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "asdf"
+    }, {
+      "id": "f9c15a2f-80e9-4dba-b501-e24409b50374",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ajax-form",
+      "targets": [
+        ["css=.ajax-form", "css:finder"],
+        ["xpath=//div[@id='signup']/div/div/form", "xpath:idRelative"],
+        ["xpath=//form", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "23f186e1-3a18-4564-ac8a-b2837c52bdbf",
+      "comment": "",
+      "command": "click",
+      "target": "id=email-address",
+      "targets": [
+        ["id=email-address", "id"],
+        ["css=#email-address", "css:finder"],
+        ["xpath=//input[@id='email-address']", "xpath:attributes"],
+        ["xpath=//div[@id='signup']/div/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bcc067fe-5443-491a-bf1c-cabed1619c06",
+      "comment": "",
+      "command": "type",
+      "target": "id=email-address",
+      "targets": [
+        ["id=email-address", "id"],
+        ["css=#email-address", "css:finder"],
+        ["xpath=//input[@id='email-address']", "xpath:attributes"],
+        ["xpath=//div[@id='signup']/div/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "asdf"
+    }, {
+      "id": "29a3b99d-4947-46a6-bd10-d4d01658d408",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='signup']/div/div/form/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "asd"
+    }, {
+      "id": "505a5833-f4c4-4335-9688-9e08f5a6d1cc",
+      "comment": "",
+      "command": "type",
+      "target": "id=confirm-password",
+      "targets": [
+        ["id=confirm-password", "id"],
+        ["css=#confirm-password", "css:finder"],
+        ["xpath=//input[@id='confirm-password']", "xpath:attributes"],
+        ["xpath=//div[@id='signup']/div/div/form/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "asd"
+    }, {
+      "id": "9c3c463a-7663-403e-864e-a5bb05e3a1fe",
+      "comment": "",
+      "command": "click",
+      "target": "id=terms-agreement",
+      "targets": [
+        ["id=terms-agreement", "id"],
+        ["css=#terms-agreement", "css:finder"],
+        ["xpath=//input[@id='terms-agreement']", "xpath:attributes"],
+        ["xpath=//div[@id='signup']/div/div/form/div[5]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0f433169-884e-435d-b9e0-a193c014679f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ajax-button",
+      "targets": [
+        ["css=.ajax-button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='signup']/div/div/form/div[6]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Create account')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d4a234af-4a63-4ae1-890a-1a5fdccf0c7c",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return document.getElementById(\"email-address\").validationMessage",
+      "targets": [],
+      "value": "message"
+    }, {
+      "id": "4a28f922-cdee-460f-ad2a-d188f254f721",
+      "comment": "",
+      "command": "echo",
+      "target": "${message}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b3f608bc-cf66-4062-b0a1-4ca04366f26f",
+      "comment": "",
+      "command": "assert",
+      "target": "message",
+      "targets": [],
+      "value": "Introduzca una dirección de correo."
+    }]
   }],
   "suites": [{
     "id": "07d37a67-c9d9-40cd-99ad-020a8c25bdbf",
@@ -488,14 +643,7 @@
     "parallel": false,
     "timeout": 300,
     "tests": ["3d784a47-e167-48fe-ad67-fcc3a02cd128"]
-  }, {
-    "id": "69bd6153-8d57-453c-8362-e7c1198bde03",
-    "name": "login-example-sails",
-    "persistSession": false,
-    "parallel": false,
-    "timeout": 300,
-    "tests": []
   }],
-  "urls": ["https://www.ual.es/"],
+  "urls": ["https://www.ual.es/", "https://ration.io/"],
   "plugins": []
 }
