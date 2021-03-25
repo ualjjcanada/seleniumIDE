@@ -1,0 +1,501 @@
+{
+  "id": "753eaf1a-75e7-4286-b9dc-e5025b9554c9",
+  "version": "2.0",
+  "name": "hmis21",
+  "url": "https://www.ual.es",
+  "tests": [{
+    "id": "356ae925-2262-4320-b5a1-057477da075a",
+    "name": "hmis-ual",
+    "commands": [{
+      "id": "dc346531-479e-45d3-8103-5c3a1ffaccf0",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "709ea902-6a99-4f7d-ab03-2c02ee4a8d39",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "842x635",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b36d8f36-dbcc-4b9b-8cea-44ce6bc411ed",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Estudios",
+      "targets": [
+        ["linkText=Estudios", "linkText"],
+        ["css=.dropdown:nth-child(2) > .dropdown-toggle", "css:finder"],
+        ["xpath=//a[contains(text(),'Estudios')]", "xpath:link"],
+        ["xpath=//div[@id='navbar']/nav/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.ual.es/estudios')]", "xpath:href"],
+        ["xpath=//nav/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Estudios')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "73f0e872-61f7-48ac-a0f3-0e4f0468a1c0",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Grados",
+      "targets": [
+        ["linkText=Grados", "linkText"],
+        ["css=.menu-destacado > ul:nth-child(3) > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Grados')]", "xpath:link"],
+        ["xpath=//div[@id='navbar']/nav/ul/li[2]/ul/li/div[2]/div[2]/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.ual.es/estudios/grados')]", "xpath:href"],
+        ["xpath=//li[2]/ul/li/div[2]/div[2]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Grados')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ee79e24-2824-46bd-be5e-29f9ef18f084",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "xpath=//span[contains(.,'Grado en Ingeniería Informática (Plan 2015)')]",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "89dd8727-5a56-4348-8d7a-6da8d5f0500a",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//span[contains(.,'Grado en Ingeniería Informática (Plan 2015)')]",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "e5bb92f9-bb04-457e-a3a5-60d4472a1e75",
+      "comment": "",
+      "command": "waitForText",
+      "target": "xpath=//span[contains(.,'Grado en Ingeniería Informática (Plan 2015)')]",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "d0c5cdc7-97ae-4d17-a2eb-dff713ae6e08",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Grado en Ingeniería Informática (Plan 2015)')]",
+      "targets": [
+        ["css=.ng-scope:nth-child(9) .ng-scope:nth-child(4) .ng-binding", "css:finder"],
+        ["xpath=//div[9]/div/ul/li[4]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Grado en Ingeniería Informática (Plan 2015)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8146c27b-8030-4095-8ffe-14da9e5b1d1e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Plan de Estudios",
+      "targets": [
+        ["linkText=Plan de Estudios", "linkText"],
+        ["css=.nav:nth-child(1) > .dropdown:nth-child(2) > .dropdown-toggle", "css:finder"],
+        ["xpath=//a[contains(text(),'Plan de Estudios')]", "xpath:link"],
+        ["xpath=//div[@id='navbarAca']/nav/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[6]", "xpath:href"],
+        ["xpath=//div[10]/div/div/nav/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Plan de Estudios ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "49321cb7-11b9-47bf-83d7-92aa074ef9df",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Asignaturas",
+      "targets": [
+        ["linkText=Asignaturas", "linkText"],
+        ["css=.open li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Asignaturas')]", "xpath:link"],
+        ["xpath=//div[@id='navbarAca']/nav/ul/li[2]/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/estudios/grados/presentacion/plandeestudios/4015')]", "xpath:href"],
+        ["xpath=//nav/ul/li[2]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Asignaturas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5f1f58e3-89d9-41e3-aa1c-6d0c932df1c0",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//a[contains(.,'Herramientas y Métodos de Ingeniería del Software')]",
+      "targets": [],
+      "value": "Herramientas y Métodos de Ingeniería del Software"
+    }]
+  }, {
+    "id": "df14482a-5e9d-4c89-a4b0-32425d56c80a",
+    "name": "mds2-ual",
+    "commands": [{
+      "id": "51738930-75a1-421b-8024-ad1a530f6649",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b8ed7962-9b4b-450f-af7c-b874e4348048",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "842x635",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "69f84b33-6f3e-4cc3-9fa2-a0f0f762439d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Estudios",
+      "targets": [
+        ["linkText=Estudios", "linkText"],
+        ["css=.dropdown:nth-child(2) > .dropdown-toggle", "css:finder"],
+        ["xpath=//a[contains(text(),'Estudios')]", "xpath:link"],
+        ["xpath=//div[@id='navbar']/nav/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.ual.es/estudios')]", "xpath:href"],
+        ["xpath=//nav/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Estudios')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8257e96e-621b-47b4-8d61-f22cd92d4ae2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Grados",
+      "targets": [
+        ["linkText=Grados", "linkText"],
+        ["css=.menu-destacado > ul:nth-child(3) > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Grados')]", "xpath:link"],
+        ["xpath=//div[@id='navbar']/nav/ul/li[2]/ul/li/div[2]/div[2]/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.ual.es/estudios/grados')]", "xpath:href"],
+        ["xpath=//li[2]/ul/li/div[2]/div[2]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Grados')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b48a81a6-f170-41c1-aae2-9cef0001a699",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Grado en Ingeniería Informática (Plan 2015)')]",
+      "targets": [
+        ["css=.ng-scope:nth-child(9) .ng-scope:nth-child(4) .ng-binding", "css:finder"],
+        ["xpath=//div[9]/div/ul/li[4]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Grado en Ingeniería Informática (Plan 2015)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "168a04bd-fd52-4a16-8a60-c1c7540df1ad",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Plan de Estudios",
+      "targets": [
+        ["linkText=Plan de Estudios", "linkText"],
+        ["css=.nav:nth-child(1) > .dropdown:nth-child(2) > .dropdown-toggle", "css:finder"],
+        ["xpath=//a[contains(text(),'Plan de Estudios')]", "xpath:link"],
+        ["xpath=//div[@id='navbarAca']/nav/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[6]", "xpath:href"],
+        ["xpath=//div[10]/div/div/nav/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Plan de Estudios ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ea25da24-e1f6-43dd-9bc4-aaf06eda2270",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Asignaturas",
+      "targets": [
+        ["linkText=Asignaturas", "linkText"],
+        ["css=.open li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Asignaturas')]", "xpath:link"],
+        ["xpath=//div[@id='navbarAca']/nav/ul/li[2]/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/estudios/grados/presentacion/plandeestudios/4015')]", "xpath:href"],
+        ["xpath=//nav/ul/li[2]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Asignaturas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e089a015-d0ad-4a78-9cd5-c9431a613fe2",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=Modelado y Diseño del Software 2",
+      "targets": [
+        ["linkText=Herramientas y Métodos de Ingeniería del Software", "linkText"],
+        ["css=.row20:nth-child(8) .ng-scope:nth-child(2) > td > .ng-binding", "css:finder"],
+        ["xpath=//a[contains(text(),'Herramientas y Métodos de Ingeniería del Software')]", "xpath:link"],
+        ["xpath=//body[@id='bodyExc']/div/div/section[3]/div/div[6]/div[2]/div/table/tbody/tr[2]/td[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/estudios/grados/presentacion/plandeestudios/asignatura/4015/40153306')]", "xpath:href"],
+        ["xpath=//div[6]/div[2]/div/table/tbody/tr[2]/td[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Herramientas y Métodos de Ingeniería del Software')]", "xpath:innerText"]
+      ],
+      "value": "Modelado y Diseño del Software 2"
+    }]
+  }, {
+    "id": "ec6d5a39-4655-4ab3-a808-5f95bbe0e909",
+    "name": "tdi-ual",
+    "commands": [{
+      "id": "461b8aef-3d7b-4db4-8f6d-9a3ae76d5068",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4659eb1d-79de-4519-b9ab-e08625e0b75b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "842x635",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "51003c83-ca7d-4e3c-afbc-b3aa4ac6216a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Estudios",
+      "targets": [
+        ["linkText=Estudios", "linkText"],
+        ["css=.dropdown:nth-child(2) > .dropdown-toggle", "css:finder"],
+        ["xpath=//a[contains(text(),'Estudios')]", "xpath:link"],
+        ["xpath=//div[@id='navbar']/nav/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.ual.es/estudios')]", "xpath:href"],
+        ["xpath=//nav/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Estudios')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "400d2a2f-35bb-4243-9ce3-bc23763a1151",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Grados",
+      "targets": [
+        ["linkText=Grados", "linkText"],
+        ["css=.menu-destacado > ul:nth-child(3) > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Grados')]", "xpath:link"],
+        ["xpath=//div[@id='navbar']/nav/ul/li[2]/ul/li/div[2]/div[2]/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.ual.es/estudios/grados')]", "xpath:href"],
+        ["xpath=//li[2]/ul/li/div[2]/div[2]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Grados')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ef1c94b6-9201-4a64-8a02-cbbcf382216c",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Grado en Ingeniería Informática (Plan 2015)')]",
+      "targets": [
+        ["css=.ng-scope:nth-child(9) .ng-scope:nth-child(4) .ng-binding", "css:finder"],
+        ["xpath=//div[9]/div/ul/li[4]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Grado en Ingeniería Informática (Plan 2015)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "642e83cc-4444-4103-a795-0e12f148d994",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Plan de Estudios",
+      "targets": [
+        ["linkText=Plan de Estudios", "linkText"],
+        ["css=.nav:nth-child(1) > .dropdown:nth-child(2) > .dropdown-toggle", "css:finder"],
+        ["xpath=//a[contains(text(),'Plan de Estudios')]", "xpath:link"],
+        ["xpath=//div[@id='navbarAca']/nav/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[6]", "xpath:href"],
+        ["xpath=//div[10]/div/div/nav/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Plan de Estudios ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d9d49086-7c5b-4e88-815b-1f36d283f1da",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Asignaturas",
+      "targets": [
+        ["linkText=Asignaturas", "linkText"],
+        ["css=.open li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Asignaturas')]", "xpath:link"],
+        ["xpath=//div[@id='navbarAca']/nav/ul/li[2]/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/estudios/grados/presentacion/plandeestudios/4015')]", "xpath:href"],
+        ["xpath=//nav/ul/li[2]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Asignaturas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f17e775f-9eca-42d6-a0e9-a7b5859c061f",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=Tratamiento Digital de Imágenes",
+      "targets": [
+        ["linkText=Herramientas y Métodos de Ingeniería del Software", "linkText"],
+        ["css=.row20:nth-child(8) .ng-scope:nth-child(2) > td > .ng-binding", "css:finder"],
+        ["xpath=//a[contains(text(),'Herramientas y Métodos de Ingeniería del Software')]", "xpath:link"],
+        ["xpath=//body[@id='bodyExc']/div/div/section[3]/div/div[6]/div[2]/div/table/tbody/tr[2]/td[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/estudios/grados/presentacion/plandeestudios/asignatura/4015/40153306')]", "xpath:href"],
+        ["xpath=//div[6]/div[2]/div/table/tbody/tr[2]/td[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Herramientas y Métodos de Ingeniería del Software')]", "xpath:innerText"]
+      ],
+      "value": "Tratamiento Digital de Imágenes"
+    }]
+  }, {
+    "id": "3d784a47-e167-48fe-ad67-fcc3a02cd128",
+    "name": "login-campus-ual-fail",
+    "commands": [{
+      "id": "85e509b1-a5b8-41f9-ab91-fcb4aeccaf9c",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3e29c45f-b017-4142-b608-8c680afc1a72",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "842x620",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "006be726-c226-4f07-ac3f-e903d5de4a7d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Campus on-line",
+      "targets": [
+        ["linkText=Campus on-line", "linkText"],
+        ["css=.campusMenu > .dropdown-toggle", "css:finder"],
+        ["xpath=//a[contains(text(),'Campus on-line')]", "xpath:link"],
+        ["xpath=//div[@id='navbar']/nav/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.ual.es/campus-online')]", "xpath:href"],
+        ["xpath=//nav/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Campus on-line')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8460c7a8-c2ad-4efb-bd2d-2c5c50d34eeb",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Acceso a Campus Virtual",
+      "targets": [
+        ["linkText=Acceso a Campus Virtual", "linkText"],
+        ["css=.campusMenu .col-lg-3:nth-child(2) .btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Acceso a Campus Virtual')]", "xpath:link"],
+        ["xpath=//div[@id='navbar']/nav/div/div/ul/li/div[2]/div[2]/p[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://campus.ual.es/')])[2]", "xpath:href"],
+        ["xpath=//div/ul/li/div[2]/div[2]/p[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Acceso a Campus Virtual')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "33896ae3-8794-42bc-9e27-c0d9d0bc5d5e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Login",
+      "targets": [
+        ["linkText=Login", "linkText"],
+        ["css=#login > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Login')]", "xpath:link"],
+        ["xpath=//li[@id='login']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/gip/apiprivado/login?retval=https://campus.ual.es/')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e27964fe-df00-4d54-8fc3-e31d643e22ea",
+      "comment": "",
+      "command": "type",
+      "target": "name=ssousername",
+      "targets": [
+        ["name=ssousername", "name"],
+        ["css=.form-group:nth-child(7) > .form-control", "css:finder"],
+        ["xpath=//input[@name='ssousername']", "xpath:attributes"],
+        ["xpath=//div[@id='login-dialog']/div/div[2]/form/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "hola"
+    }, {
+      "id": "832289fb-636e-405d-9210-24458dc932f3",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.form-group:nth-child(8) > .form-control", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='login-dialog']/div/div[2]/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "hola"
+    }, {
+      "id": "9ac9d9dd-2d36-44e0-a7b2-5ceaf20eb75a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//input[@value='Conectar']", "xpath:attributes"],
+        ["xpath=//div[@id='login-dialog']/div/div[2]/form/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a4d5731d-a5f8-4929-9af8-be7167217b47",
+      "comment": "",
+      "command": "click",
+      "target": "css=.alert",
+      "targets": [
+        ["css=.alert", "css:finder"],
+        ["xpath=//div[@id='login-dialog']/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c2d99388-471a-437d-a233-c2886cfa22aa",
+      "comment": "",
+      "command": "click",
+      "target": "css=.alert",
+      "targets": [
+        ["css=.alert", "css:finder"],
+        ["xpath=//div[@id='login-dialog']/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bce5414c-8eda-4a83-952d-7d1323d897ae",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "css=.alert",
+      "targets": [
+        ["css=.alert", "css:finder"],
+        ["xpath=//div[@id='login-dialog']/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "43ca10c7-33db-449f-861a-79c08cfd13e5",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.alert",
+      "targets": [
+        ["css=.alert", "css:finder"],
+        ["xpath=//div[@id='login-dialog']/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div", "xpath:position"]
+      ],
+      "value": "Ha introducido un usuario y password incorrecto"
+    }]
+  }],
+  "suites": [{
+    "id": "07d37a67-c9d9-40cd-99ad-020a8c25bdbf",
+    "name": "web-ual-grado-ing-inf",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["356ae925-2262-4320-b5a1-057477da075a", "df14482a-5e9d-4c89-a4b0-32425d56c80a", "ec6d5a39-4655-4ab3-a808-5f95bbe0e909"]
+  }, {
+    "id": "ec3beedb-b805-46f2-9b8b-b5178a60cbfe",
+    "name": "campus-virtual-ual",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["3d784a47-e167-48fe-ad67-fcc3a02cd128"]
+  }, {
+    "id": "69bd6153-8d57-453c-8362-e7c1198bde03",
+    "name": "login-example-sails",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://www.ual.es/"],
+  "plugins": []
+}
